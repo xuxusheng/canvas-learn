@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>demo-1</title>
+    <style>
+        canvas {
+            border: 1px dashed steelblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="tutorial" width="150" height="150"></canvas>
+<script>
+    var canvas = document.getElementById("tutorial")
+    var ctx = canvas.getContext('2d')
+
+    ctx.fillRect(25,25,100,100)
+    ctx.clearRect(45,45,60,60)
+    ctx.strokeRect(50,50,50,50)
+
+    /*
+    * 接下来我们能够看到 clearRect() 的两个可选方法，然后我们会知道如何改变渲染图形的填充颜色及描边颜色。
+    * 不同于下一节所要介绍的路径函数，以上的三个函数绘制之后会马上显现在canvas上，即时生效。
+    * */
+</script>
+</body>
+</html>
